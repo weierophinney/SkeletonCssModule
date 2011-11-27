@@ -1,0 +1,18 @@
+SkeletonCss=/home/matthew/git/SkeletonCss CD=. filter="*.md *.js *.css *.html *.txt" {
+ README.md
+ public=public {
+  404.html
+  index.html
+  robots.txt
+  css=css {
+   base.css
+   layout.css
+   skeleton.css
+  }
+  images=images {
+  }
+  js=js {
+   tabs.js
+  }
+ }
+}
