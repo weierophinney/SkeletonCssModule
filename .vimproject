@@ -1,4 +1,4 @@
-SkeletonCss=/home/matthew/git/SkeletonCss CD=. filter="*.md *.js *.css *.html *.txt" {
+SkeletonCss=/home/matthew/git/modules/SkeletonCssModule CD=. filter="*.md *.js *.css *.html *.txt" {
  README.md
  public=public {
   404.html
