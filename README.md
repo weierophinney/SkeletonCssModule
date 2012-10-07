@@ -1,5 +1,5 @@
-Skeleton CSS
-============
+Skeleton CSS ZF2 Module
+=======================
 
 From http://getskeleton.com:
 
@@ -20,20 +20,20 @@ JS under your document root, you have several options:
 
 Probably the easiest way is to simply copy them:
 
-    cp -a module/SkeletonCss/public/css public/css/SkeletonCss
-    cp -a module/SkeletonCss/public/js public/js/SkeletonCss
-    cp -a module/SkeletonCss/public/images public/images/SkeletonCss
+    cp -a module/SkeletonModuleCss/public/css public/css/SkeletonCssModule
+    cp -a module/SkeletonModuleCss/public/js public/js/SkeletonCssModule
+    cp -a module/SkeletonModuleCss/public/images public/images/SkeletonCssModule
 
 ### 2- Symlink them
 
 If you are on a \*nix-based system, you can symlink.
 
     cd public/css/
-    ln -s ../../../module/SkeletonCss/public/css SkeletonCss
+    ln -s ../../../module/SkeletonCssModule/public/css SkeletonCssModule
     cd ../js
-    ln -s ../../../module/SkeletonCss/public/js SkeletonCss
+    ln -s ../../../module/SkeletonCssModule/public/js SkeletonCssModule
     cd ../images
-    ln -s ../../../module/SkeletonCss/public/images SkeletonCss
+    ln -s ../../../module/SkeletonCssModule/public/images SkeletonCssModule
 
 This is also possible on Windows Server 2003 and above; however, you will have
 to look up the methodology yourself at this time.
@@ -43,9 +43,9 @@ to look up the methodology yourself at this time.
 On Apache, you can use mod_alias to accomplish this. The most direct way is to
 specify aliases for each module:
 
-    Alias /css/SkeletonCss/ /path/to/site/module/SkeletonCss/public/css/
-    Alias /js/SkeletonCss/ /path/to/site/module/SkeletonCss/public/js/
-    Alias /images/SkeletonCss/ /path/to/site/module/SkeletonCss/public/images/
+    Alias /css/SkeletonCssModule/ /path/to/site/module/SkeletonCssModule/public/css/
+    Alias /js/SkeletonCssModule/ /path/to/site/module/SkeletonCssModule/public/js/
+    Alias /images/SkeletonCssModule/ /path/to/site/module/SkeletonCssModule/public/images/
 
 Alternately, you could use AliasMatch to condense this and serve many modules,
 assuming they follow the same directory layout:
